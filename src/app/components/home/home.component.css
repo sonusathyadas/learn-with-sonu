@@ -1,0 +1,23 @@
+.md-item{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card-title a{
+    color: brown;
+    text-decoration: none;
+}
+
+.card-title a:hover{
+    text-decoration: underline;
+}
+
+.readlink{
+    color:black;
+    text-decoration: none;
+}
+
+.readlink:hover{
+    text-decoration: underline;
+}

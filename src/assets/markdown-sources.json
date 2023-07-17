@@ -1,0 +1,20 @@
+{
+    "sources": [
+        {
+            "id": 1,
+            "title": "Build cloud agnostic container images using Buildpacks",
+            "postedDate": "July 17, 2025",            
+            "description": "Cloud Native Buildpacks are used to transform your application source code into OCI standard container. The auto-detection process in the buildpack detects the matching buildpack for the application source code. It runs a group of buildpacks sequentially against the application source code and the first group that deems itself fit for the source code will be choosen as the selected set of buildpack for that source code. ",
+            "path":"buildpacks/Readme.md"
+
+        },
+        {
+            "id": 2,
+            "title": "OpenAI : Revolutionizing Artificial Intelligence",
+            "postedDate": "July 17, 2025",            
+            "description": "OpenAI is a leading research organization dedicated to pushing the boundaries of AI capabilities. OpenAI, founded in 2015, is a research organization committed to ensuring that artificial general intelligence (AGI) benefits all of humanity. It strives to develop AI systems that are safe, beneficial, and accessible to people across the globe. OpenAI provides a spectrum of models with different levels of power suitable for different tasks. It also allows you to fine-tune your own custom models. These models can be used for everything from content generation to semantic search and classification.",
+            "path":"openai/Readme.md"
+
+        }
+    ]
+}

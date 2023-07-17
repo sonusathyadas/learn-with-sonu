@@ -1,0 +1,66 @@
+
+.profile-images{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;    
+}
+
+.profile-container{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.logo{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.social-container{
+    width: 100%;
+    text-align: left;
+}
+
+.social-item{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.social-item a{
+    text-decoration: none;
+    color:black;
+}
+
+.social-item a:hover{
+    text-decoration: underline;
+}
+
+.skills-container{
+    margin-top: 15px;
+    float: left;
+}
+
+div[class^="skill-"]{
+    border: 0.5px solid black;
+    margin:5px 10px;
+    display: inline-block;
+    background-color: gainsboro;
+    padding: 2px 10px;
+}
+.skill-sm {
+    font-size: 10px;
+    float: left;
+}
+
+.skill-md{
+    font-size: 12px;
+    float: left;
+
+}
+
+.skill-lg{
+    font-size: 15px;
+    float: left;
+
+}

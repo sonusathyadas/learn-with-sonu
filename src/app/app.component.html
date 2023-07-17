@@ -1,0 +1,55 @@
+<div class="container app-container">
+  <div class="row">
+    <div class="col-12" id="navcontainer">
+      <div class="topnav">
+        <header class="header">
+          <h3>Learn with Sonu</h3>
+        </header>
+        <nav>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" aria-current="page" routerLink="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="about">About</a>
+            </li>
+          </ul>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="maincontainer">
+    <div id="leftpanel" class="col-lg-2">
+      <div class="profile-container">
+        <img src="/learn-with-sonu/assets/images/profile_image.jpg" class="profile-images" alt="Profile Image" />
+        <h4>Sonu Sathyadas</h4>
+        <div class="social-container">
+          <div class="social-item"><img class="logo" src="/learn-with-sonu/assets/images/facebook.png"/>Facebook</div>
+          <div class="social-item"><img class="logo" src="/learn-with-sonu/assets/images/twitter.png"/>Twitter</div>
+          <div class="social-item">
+            <a href="https://www.youtube.com/@bytestreamtech"><img class="logo" src="/learn-with-sonu/assets/images/youtube.png"/>Youtube</a>
+          </div>
+          <div class="social-item">
+            <a href="mailto:sonusathyadas@hotmail.com"><img class="logo" src="/learn-with-sonu/assets/images/email.png"/>E-mail</a>
+          </div>          
+        </div>
+        <div class="skills-container">
+          <div class="skill-sm">Azure</div>
+          <div class="skill-lg">AWS</div>
+          <div class="skill-md">Microservices</div>
+          <div class="skill-md">ASP.NET</div>
+          <div class="skill-lg">C#</div>
+          <div class="skill-sm">Python</div>
+          <div class="skill-sm">MongoDB</div>
+          <div class="skill-md">NodeJS</div>
+          <div class="skill-lg">Angular</div>
+        </div>
+      </div>
+    </div>
+    <div id="mainpanel" class="col-lg-10">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

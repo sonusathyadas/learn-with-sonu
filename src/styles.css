@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-color: #333;
+    padding: 0x;
+    margin: 0px;
+    /* min-height: 100%; */
+}
+.app-container{
+    border-left:1px solid black;
+    border-right:1px solid black;
+    background-color: white;
+    min-height: 100vh;
+    
+}
+
+#navcontainer{
+    padding: 0px;
+    margin:0px;
+}
+
+.topnav{
+    background-color: lightgrey;
+    padding-top: 5px;
+} 
+
+.topnav header{
+    text-align: center;
+    border-bottom: #333;
+    border-bottom-style: dotted;
+}
+
+.topnav header h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;    
+    font-weight: bold;    
+}
+
+.topnav nav {
+    text-align: center;   
+}
+
+.topnav nav ul{
+    display: inline-block;
+}
+
+.topnav nav ul li{
+    display: inline-block;
+    margin: 0 auto;    
+}
+
+.topnav nav ul li a {
+    color:chocolate;
+}
+
+.topnav nav ul li a:hover{
+    text-decoration: underline;
+    color:black;
+    background-color: darkgray;
+}
+
+
+#maincontainer{
+    border-top: 1px solid black;
+    min-height: 90vh;
+}
+
+#leftpanel{
+    border-right: 1px solid black;
+    background-color: azure;
+    min-height: 100%;
+}
+
+#mainpanel{
+    min-height: 100%;
+    height: 100%;
+}
+
+@media screen and (width < 1400px) {
+    #leftpanel{
+        display: none;
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <!-- <div class="item-container" *ngFor="let item of sources">
+                <h2>{{item.title}}</h2>
+            </div> -->
+            <div class="card md-item" *ngFor="let item of sources" >
+                <div class="card-body">
+                  <h5 class="card-title"><a [routerLink]="['article', item.id]">{{item.title}}</a></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{item.description}}</h6>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                  <a class="readlink" [routerLink]="['article', item.id]"> Read more...</a>                  
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
