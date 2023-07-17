@@ -1,0 +1,24 @@
+
+.card{
+    margin-top:20px;
+}
+
+.heading{
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.profile-images{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;    
+}
+
+.image-container{
+    text-align: center;
+}
+
+.col1{
+    width: 25%;
+}

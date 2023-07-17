@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
-import { RouterLink, RouterModule } from '@angular/router';
+import { RouterLink } from '@angular/router';
+import { ASSETS_PREFIX } from 'src/main';
 
 @Component({
   selector: 'app-home',
@@ -16,12 +17,12 @@ export class HomeComponent implements OnInit {
 
   sources:any[];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, @Inject(ASSETS_PREFIX)private asset_prefix:string) {
 
   }
 
   async ngOnInit(){
-    let response = this.http.get('/learn-with-sonu/assets/markdown-sources.json');
+    let response = this.http.get(`${this.asset_prefix}/assets/markdown-sources.json`);
     let data:any = await firstValueFrom(response);
     this.sources = data.sources;
     

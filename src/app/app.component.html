@@ -23,16 +23,16 @@
   <div class="row" id="maincontainer">
     <div id="leftpanel" class="col-lg-2">
       <div class="profile-container">
-        <img src="/learn-with-sonu/assets/images/profile_image.jpg" class="profile-images" alt="Profile Image" />
+        <img [src]="assets_prefix + '/assets/images/profile_image.jpg'" class="profile-images" alt="Profile Image" />
         <h4>Sonu Sathyadas</h4>
         <div class="social-container">
-          <div class="social-item"><img class="logo" src="/learn-with-sonu/assets/images/facebook.png"/>Facebook</div>
-          <div class="social-item"><img class="logo" src="/learn-with-sonu/assets/images/twitter.png"/>Twitter</div>
+          <div class="social-item"><img class="logo" [src]="assets_prefix + '/assets/images/facebook.png'"/>Facebook</div>
+          <div class="social-item"><img class="logo" [src]="assets_prefix + '/assets/images/twitter.png'"/>Twitter</div>
           <div class="social-item">
-            <a href="https://www.youtube.com/@bytestreamtech"><img class="logo" src="/learn-with-sonu/assets/images/youtube.png"/>Youtube</a>
+            <a href="https://www.youtube.com/@bytestreamtech"><img class="logo" [src]="assets_prefix + '/assets/images/youtube.png'"/>Youtube</a>
           </div>
           <div class="social-item">
-            <a href="mailto:sonusathyadas@hotmail.com"><img class="logo" src="/learn-with-sonu/assets/images/email.png"/>E-mail</a>
+            <a href="mailto:sonusathyadas@hotmail.com"><img class="logo" [src]="assets_prefix + '/assets/images/email.png'"/>E-mail</a>
           </div>          
         </div>
         <div class="skills-container">
