@@ -3,7 +3,7 @@
         {
             "id": 1,
             "title": "Build cloud agnostic container images using Buildpacks",
-            "postedDate": "July 17, 2025",            
+            "postedDate": "July 17, 2023",            
             "description": "Cloud Native Buildpacks are used to transform your application source code into OCI standard container. The auto-detection process in the buildpack detects the matching buildpack for the application source code. It runs a group of buildpacks sequentially against the application source code and the first group that deems itself fit for the source code will be choosen as the selected set of buildpack for that source code. ",
             "path":"buildpacks/Readme.md"
 
@@ -11,10 +11,38 @@
         {
             "id": 2,
             "title": "OpenAI : Revolutionizing Artificial Intelligence",
-            "postedDate": "July 17, 2025",            
+            "postedDate": "July 17, 2023",            
             "description": "OpenAI is a leading research organization dedicated to pushing the boundaries of AI capabilities. OpenAI, founded in 2015, is a research organization committed to ensuring that artificial general intelligence (AGI) benefits all of humanity. It strives to develop AI systems that are safe, beneficial, and accessible to people across the globe. OpenAI provides a spectrum of models with different levels of power suitable for different tasks. It also allows you to fine-tune your own custom models. These models can be used for everything from content generation to semantic search and classification.",
             "path":"openai/Readme.md"
 
+        },
+        {
+            "id":3,
+            "title":"Replication in MongoDB",
+            "postedDate":"July 16, 2023",
+            "description":"Replication helps you to create highly available database servers. It helps you to synchronize data between multiple servers. This ensures reliability and high availability of database. You can recover from the data loss that occurs due to server failures. Replica can be used as a backup that helps for disaster recovery. Additionally, the replica can be used as a read-only server that reduces the latency for read requests.",
+            "path":"mongo-replication/Readme.md"
+        },
+        {
+            "id":4,
+            "title":"Monitoring MongoDB databases",
+            "postedDate":"July 16, 2023",
+            "description":"Monitoring is a critical component of all database administration. A firm grasp of MongoDB’s reporting will allow you to assess the state of your database and maintain your deployment without crisis. Additionally, a sense of MongoDB’s normal operational parameters will allow you to diagnose problems before they escalate to failures.",
+            "path":"mongo-monitoring/Readme.md"
+        },
+        {
+            "id":5,
+            "title":"Enabling authentication for MongoDB",
+            "postedDate":"July 16, 2023",
+            "description":"Authentication is the process of verifying the identity of a client. When access control (authorization) is enabled, MongoDB requires all clients to authenticate themselves in order to determine their access.",
+            "path":"mongo-auth/Readme.md"
+        },
+        {
+            "id":6,
+            "title":"Sharded clusters in MongoDB",
+            "postedDate":"July 15, 2023",
+            "description":"Sharding is the process of storing the documents in multiple MongoDB servers instead of storing in a single MongoDB instance. It helps us to improve the performance of the query process. A single instance of the MongoDB Server will not be sufficient to store the growing data. MongoDB uses sharding to support deployments with very large data sets and high throughput operations. Sharding horizontally scales the mongodb instances.",
+            "path":"mongo-sharding/Readme.md"
         }
     ]
 }

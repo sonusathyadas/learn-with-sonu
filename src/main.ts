@@ -7,15 +7,15 @@ import { ArticleComponent } from './app/components/article/article.component';
 import { InjectionToken, importProvidersFrom } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppModule } from './app/app.module';
-import { environment } from './environment';
+import { environment } from './environments/environment';
 
 export const ASSETS_PREFIX = new InjectionToken<string>('ASSETS_PREFIX');
 
-let asset_prefix_value = "";
+// let asset_prefix_value = "";
 
-if (environment.production) {
-  asset_prefix_value = "/learn-with-sonu";
-}
+// if (environment.production) {
+//   asset_prefix_value = "/learn-with-sonu";
+// }
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'about', component: AboutComponent },
@@ -26,7 +26,7 @@ bootstrapApplication(AppComponent, {
   providers: [
     provideRouter(routes, withComponentInputBinding()),
     importProvidersFrom(HttpClientModule, RouterModule, AppModule),
-    { provide: ASSETS_PREFIX, useValue: asset_prefix_value }
+    { provide: ASSETS_PREFIX, useValue: environment.asset_prefix_value }
   ]
 })
   .catch(err => console.error(err));

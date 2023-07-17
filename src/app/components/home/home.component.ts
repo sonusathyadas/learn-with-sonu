@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 import { RouterLink } from '@angular/router';
 import { ASSETS_PREFIX } from 'src/main';
+import { Post } from 'src/app/models/post';
 
 @Component({
   selector: 'app-home',
@@ -24,7 +25,9 @@ export class HomeComponent implements OnInit {
   async ngOnInit(){
     let response = this.http.get(`${this.asset_prefix}/assets/markdown-sources.json`);
     let data:any = await firstValueFrom(response);
-    this.sources = data.sources;
+    this.sources = (data.sources as Array<Post>).sort((val1:Post, val2:Post)=> {
+      return new Date(val2.postedDate).getTime() - new Date(val1.postedDate).getTime()
+    })
     
   }
 
