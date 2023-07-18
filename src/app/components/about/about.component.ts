@@ -1,11 +1,12 @@
 import { Component, Inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ASSETS_PREFIX } from 'src/main';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
