@@ -64,3 +64,8 @@ div[class^="skill-"]{
     float: left;
 
 }
+#mainpanel{
+    font-family: "Consolas", 'Courier New', Courier, monospace;
+    color: #555;
+  
+}

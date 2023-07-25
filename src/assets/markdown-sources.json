@@ -43,6 +43,13 @@
             "postedDate":"July 15, 2023",
             "description":"Sharding is the process of storing the documents in multiple MongoDB servers instead of storing in a single MongoDB instance. It helps us to improve the performance of the query process. A single instance of the MongoDB Server will not be sufficient to store the growing data. MongoDB uses sharding to support deployments with very large data sets and high throughput operations. Sharding horizontally scales the mongodb instances.",
             "path":"mongo-sharding/Readme.md"
+        },
+        {
+            "id":7,
+            "title":"Moleculer JS - Empowering Node.js with Microservices",
+            "postedDate":"July 25, 2023",
+            "description":"In the world of Node.js, building scalable and efficient applications can be a complex task. Traditional monolithic architectures often hinder developers from maximizing the potential of modern computing power. However, Microservices have emerged as a game-changer, enabling developers to break down complex applications into smaller, manageable, and independent services. Among the many tools available for building Microservices in Node.js, Moleculer JS stands out as a powerful and versatile framework. In this blog, we will dive deep into Moleculer JS, exploring its features, architecture, and benefits for developing robust Microservices-based applications.",
+            "path":"moleculer/Readme.md"
         }
     ]
 }
